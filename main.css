@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+
+body {
+  font-family:'Georgia', serif;
+  background-image: url('https://wallpapers.com/images/featured/cartoon-forest-background-pk4lm7s01x1t3ckt.jpg')
+  background-position: top center;
+}
+.app-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url('https://wallpapers.com/images/featured/cartoon-forest-background-pk4lm7s01x1t3ckt.jpg'); /* Replace 'your-image-path.jpg' with your image URL */
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 15px 15px;
+}
+
+
+header input {
+  width: 90%;
+  max-width: 380px;
+  padding: 12px 15px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 25px;
+  border-bottom: 4px solid #FFB74D;
+ 
+  color: #555;
+  font-size: 18px;
+  font-weight: 400;
+  transition: background-color 0.3s ease-out, border-bottom 0.3s ease-out;
+}
+
+header input:hover,
+header input:focus {
+  background-color: rgba(255, 255, 255, 1);
+  border-bottom: 4px solid #FF9800;
+}
+
+
+header input:focus {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+header input {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* other styles */
+}
+
+
+main {
+  flex: 1 1 100%;
+  padding: 25px 25px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.location .city {
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+
+@keyframes colorChange {
+  0% { color: #FF6347; }
+  25% { color: #00BFFF; }
+  50% { color: #7CFC00; }
+  75% { color: #FFD700; }
+  100% { color: #FF6347; }
+}
+
+
+.location .date {
+  color: #FFF;
+  font-size: 16px;
+}
+
+.current .temp {
+  color: #FFF;
+  font-size: 102px;
+  font-weight: 900;
+  margin: 30px 0px;
+  text-shadow: 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.current .temp span {
+  font-weight: 500;
+}
+
+.current .weather {
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 15px;
+  text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
+}
